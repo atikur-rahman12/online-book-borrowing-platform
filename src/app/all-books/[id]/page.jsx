@@ -20,7 +20,7 @@ const BooksDetailsPage = async ({ params }) => {
   }
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-[#020617] via-[#0F172A] to-[#020617] py-12 px-4">
+    <div className="min-h-screen bg-linear-to-br from-[#020617] via-[#0F172A] to-[#020617] py-12 px-4 mb-[-200]">
       <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-2xl shadow-[0_0_60px_rgba(0,0,0,0.6)]">
         <div className="grid md:grid-cols-2 gap-10 p-6 md:p-12">
           <div className="flex justify-center items-center">

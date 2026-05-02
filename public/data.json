@@ -72,6 +72,15 @@
     "image_url": "https://i.ibb.co.com/7B0qyN8/Deep-Dive-Py.webp"
   },
   {
+    "id": 9,
+    "title": "The Human Brain",
+    "author": "Dr. Sharmeen Akter",
+    "description": "Explore the complexities of the human brain and its incredible capabilities.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://i.ibb.co.com/MymFYK7d/Brain.jpg"
+  },
+  {
     "id": 10,
     "title": "The Last Kingdom",
     "author": "Rakib Chowdhury",

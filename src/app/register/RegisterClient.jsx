@@ -32,6 +32,7 @@ const RegisterClient = () => {
     });
 
     if (error) {
+      console.log(error);
       return toast.error(error.message || "Registration Failed");
     }
 

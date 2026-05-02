@@ -99,13 +99,23 @@ const Navbar = () => {
         ) : user ? (
           <div className="navbar-end flex items-center gap-3">
             <h2>{user.name}</h2>
-            <Image
-              src={user.image || userAvatar}
-              alt="user avatar"
-              width={40}
-              height={40}
-              className="rounded-full"
-            />
+            <div className="avatar">
+              <div className="w-9 rounded-full bg-linear-to-tr from-blue-500 to-cyan-400 flex items-center justify-center text-white font-bold overflow-hidden">
+                {user?.image ? (
+                  <Image
+                    src={user.image}
+                    alt="user"
+                    width={48}
+                    height={48}
+                    className="object-cover w-full h-full"
+                  />
+                ) : (
+                  <span className="text-lg">
+                    {user?.name?.charAt(0).toUpperCase()}
+                  </span>
+                )}
+              </div>
+            </div>
             <button
               className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-pink-500 text-white text-sm font-medium shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
               onClick={async () => await authClient.signOut()}
