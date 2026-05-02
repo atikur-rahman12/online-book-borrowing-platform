@@ -41,7 +41,7 @@ const BooksCard = ({ book }) => {
 
         <div className="mt-auto pt-4">
           <Link
-            href={"/all-books"}
+            href={`/all-books/${book.id}`}
             className="w-full btn btn-primary btn-sm py-4 rounded-full hover:scale-105 transition-transform"
           >
             View Details <LuSquareArrowOutUpRight className="text-lg" />
