@@ -6,7 +6,7 @@
     "description": "A mysterious story of a forest hiding ancient secrets and forgotten civilizations.",
     "category": "Story",
     "available_quantity": 12,
-    "image_url": "https://i.ibb.co.com/0cv102J/To-Kill-a-Mockingbird.webp"
+    "image_url": "https://i.ibb.co.com/1GGxRS2h/silent-forest.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "description": "A complete guide to modern JavaScript, covering ES6+, frameworks, and best practices.",
     "category": "Tech",
     "available_quantity": 8,
-    "image_url": "https://i.ibb.co.com/khHN7Pk/9780143454212.jpg"
+    "image_url": "https://i.ibb.co.com/xqrVjNct/javascript-m.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "description": "An introduction to quantum physics and how it shapes our understanding of reality.",
     "category": "Science",
     "available_quantity": 5,
-    "image_url": "https://i.ibb.co.com/MprDyVt/51-BIA4rrae-L-AC-UF1000-1000-QL80.jpg"
+    "image_url": "https://i.ibb.co.com/G4yPtbHD/quntam-book.jpg"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "description": "A time-travel story where past and future collide in unexpected ways.",
     "category": "Story",
     "available_quantity": 10,
-    "image_url": "https://i.ibb.co.com/tYSWRfG/catcherrye-edited-1-800x.png"
+    "image_url": "https://i.ibb.co.com/Y7T6PRXn/Whats-App-Image-2026-05-01-at-12-22-36-AM.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "Learn React from scratch and build modern, scalable web applications.",
     "category": "Tech",
     "available_quantity": 15,
-    "image_url": "https://i.ibb.co.com/YdQDMpn/81me-ud-V63-L-AC-UF1000-1000-QL80.jpg"
+    "image_url": "https://i.ibb.co.com/39TSXzB5/the-road-to-react.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "Discover the history and future of space missions and interstellar travel.",
     "category": "Science",
     "available_quantity": 7,
-    "image_url": "https://i.ibb.co.com/xS8YvxL/81m-CE-uclx-L-UF1000-1000-QL80.jpg"
+    "image_url": "https://i.ibb.co.com/60Fhrvvt/space.jpg"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "description": "A haunting tale of secrets revealed under the cover of darkness.",
     "category": "Story",
     "available_quantity": 9,
-    "image_url": "https://i.ibb.co.com/989qMRW/42844155.jpg"
+    "image_url": "https://i.ibb.co.com/5gt7RPG4/whispers-night.jpg"
   },
   {
     "id": 8,
@@ -69,16 +69,7 @@
     "description": "Advanced Python programming techniques for real-world applications.",
     "category": "Tech",
     "available_quantity": 6,
-    "image_url": "https://i.ibb.co.com/zS9jsdK/18144590.jpg"
-  },
-  {
-    "id": 9,
-    "title": "The Human Brain",
-    "author": "Dr. Sharmeen Akter",
-    "description": "Explore the complexities of the human brain and its incredible capabilities.",
-    "category": "Science",
-    "available_quantity": 4,
-    "image_url": "https://i.ibb.co.com/P6hfCmJ/Whats-App-Image-2024-05-22-at-11-21-25-2e21ae46.jpg"
+    "image_url": "https://i.ibb.co.com/7B0qyN8/Deep-Dive-Py.webp"
   },
   {
     "id": 10,

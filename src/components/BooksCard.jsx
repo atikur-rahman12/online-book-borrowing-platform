@@ -11,7 +11,7 @@ const BooksCard = ({ book }) => {
           alt={book.title}
           width={200}
           height={300}
-          className="w-50 h-50 object-contain rounded-md"
+          className="w-50 h-50 object-contain rounded-md shadow-lg"
         />
       </figure>
 
