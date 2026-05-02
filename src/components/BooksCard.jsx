@@ -5,13 +5,13 @@ import { LuSquareArrowOutUpRight } from "react-icons/lu";
 const BooksCard = ({ book }) => {
   return (
     <div className="group w-full bg-white/90 backdrop-blur-md border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-500 rounded-2xl overflow-hidden flex flex-col hover:-translate-y-2">
-      <figure className="overflow-hidden">
+      <figure className="flex justify-center items-center px-10 pt-10">
         <Image
           src={book.image_url}
-          alt="Book"
-          width={400}
-          height={250}
-          className="w-full h-80 object-cover"
+          alt={book.title}
+          width={200}
+          height={300}
+          className="w-50 h-50 object-contain rounded-md"
         />
       </figure>
 
