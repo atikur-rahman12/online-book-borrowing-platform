@@ -1,71 +1,71 @@
 [
   {
     "id": 1,
-    "title": "The Silent Forest",
-    "author": "Arif Hasan",
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
     "description": "A mysterious story of a forest hiding ancient secrets and forgotten civilizations.",
     "category": "Story",
     "available_quantity": 12,
-    "image_url": "https://i.ibb.co.com/1GGxRS2h/silent-forest.jpg"
+    "image_url": "https://i.ibb.co.com/wrRnHKhz/story.webp"
   },
   {
     "id": 2,
-    "title": "JavaScript Mastery",
-    "author": "Nusrat Jahan",
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt & David Thomas",
     "description": "A complete guide to modern JavaScript, covering ES6+, frameworks, and best practices.",
     "category": "Tech",
     "available_quantity": 8,
-    "image_url": "https://i.ibb.co.com/xqrVjNct/javascript-m.jpg"
+    "image_url": "https://i.ibb.co.com/WNPgs5KY/tech-1.jpg"
   },
   {
     "id": 3,
-    "title": "Quantum World",
-    "author": "Dr. Rahman Ali",
+    "title": "Reality Is Not What It Seems",
+    "author": " Carlo Rovelli",
     "description": "An introduction to quantum physics and how it shapes our understanding of reality.",
     "category": "Science",
     "available_quantity": 5,
-    "image_url": "https://i.ibb.co.com/G4yPtbHD/quntam-book.jpg"
+    "image_url": "https://i.ibb.co.com/bgWd1mcR/science-2.jpg"
   },
   {
     "id": 4,
-    "title": "Lost in Time",
-    "author": "Sadia Karim",
+    "title": "Charlotte's Web",
+    "author": "E.B. White",
     "description": "A time-travel story where past and future collide in unexpected ways.",
     "category": "Story",
     "available_quantity": 10,
-    "image_url": "https://i.ibb.co.com/Y7T6PRXn/Whats-App-Image-2026-05-01-at-12-22-36-AM.jpg"
+    "image_url": "https://i.ibb.co.com/DPwC5Sgs/story-b.jpg"
   },
   {
     "id": 5,
-    "title": "The Road of React",
-    "author": "Tanvir Ahmed",
+    "title": "You Don't Know JS",
+    "author": "Kyle Simpson",
     "description": "Learn React from scratch and build modern, scalable web applications.",
     "category": "Tech",
     "available_quantity": 15,
-    "image_url": "https://i.ibb.co.com/39TSXzB5/the-road-to-react.jpg"
+    "image_url": "https://i.ibb.co.com/4wzYFSHc/tech-2.jpg"
   },
   {
     "id": 6,
-    "title": "Space Exploration",
-    "author": "Dr. Farzana Islam",
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
     "description": "Discover the history and future of space missions and interstellar travel.",
     "category": "Science",
     "available_quantity": 7,
-    "image_url": "https://i.ibb.co.com/60Fhrvvt/space.jpg"
+    "image_url": "https://i.ibb.co.com/wNFnxVW3/science-3.jpg"
   },
   {
     "id": 7,
-    "title": "Whispers of the Night",
-    "author": "Imran Hossain",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
     "description": "A haunting tale of secrets revealed under the cover of darkness.",
     "category": "Story",
     "available_quantity": 9,
-    "image_url": "https://i.ibb.co.com/5gt7RPG4/whispers-night.jpg"
+    "image_url": "https://i.ibb.co.com/0jpzdPnL/Book-owls-covers-2.webp"
   },
   {
     "id": 8,
-    "title": "Deep Dive Python",
-    "author": "Mehedi Hasan",
+    "title": "Deep Dive into Python",
+    "author": "Adarsh Divakaran",
     "description": "Advanced Python programming techniques for real-world applications.",
     "category": "Tech",
     "available_quantity": 6,
@@ -73,38 +73,38 @@
   },
   {
     "id": 9,
-    "title": "The Human Brain",
-    "author": "Dr. Sharmeen Akter",
+    "title": "The Order of Time",
+    "author": "Carlo Rovelli",
     "description": "Explore the complexities of the human brain and its incredible capabilities.",
     "category": "Science",
     "available_quantity": 4,
-    "image_url": "https://i.ibb.co.com/MymFYK7d/Brain.jpg"
+    "image_url": "https://i.ibb.co.com/SwWTWv7x/science-1.jpg"
   },
   {
     "id": 10,
-    "title": "The Last Kingdom",
-    "author": "Rakib Chowdhury",
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
     "description": "An epic story of war, honor, and the fight to reclaim a lost kingdom.",
     "category": "Story",
     "available_quantity": 11,
-    "image_url": "https://i.ibb.co.com/Z6FQF98p/Last-Kingdom.jpg"
+    "image_url": "https://i.ibb.co.com/RGY4PF6z/story-a.jpg"
   },
   {
     "id": 11,
-    "title": "AI Revolution",
-    "author": "Sabbir Ahmed",
+    "title": "Cracking the Coding Interview",
+    "author": "Gayle Laakmann McDowell",
     "description": "Understand artificial intelligence and its impact on the future of technology.",
     "category": "Tech",
     "available_quantity": 13,
-    "image_url": "https://i.ibb.co.com/C55SVxJh/ai.jpg"
+    "image_url": "https://i.ibb.co.com/rJ4K2HG/tech-3.jpg"
   },
   {
     "id": 12,
-    "title": "Climate Change Explained",
-    "author": "Dr. Nusreen Sultana",
+    "title": "The Elegant Universe",
+    "author": "Brian Greene",
     "description": "A clear and concise explanation of climate change and its global effects.",
     "category": "Science",
     "available_quantity": 3,
-    "image_url": "https://i.ibb.co.com/MyGygrr8/climate.jpg"
+    "image_url": "https://i.ibb.co.com/7Jxstsv4/science-4.jpg"
   }
 ]

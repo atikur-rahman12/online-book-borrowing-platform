@@ -52,7 +52,11 @@ const BooksDetailsPage = async ({ params }) => {
               {book.description}
             </p>
 
-            <div className="flex items-center gap-4 mt-4">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="px-4 py-2 bg-blue-500/10 border border-blue-400/30 text-blue-400 rounded-full text-sm backdrop-blur-md">
+                {book.category} Book
+              </span>
+
               <span className="px-5 py-2 bg-green-500/10 border border-green-400/30 text-green-400 rounded-full text-sm backdrop-blur-md">
                 {book.available_quantity} Copies Available
               </span>
