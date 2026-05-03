@@ -10,7 +10,6 @@ import { FiLogOut } from "react-icons/fi";
 const Navbar = () => {
   const { data: session, isPending } = authClient.useSession();
   const user = session?.user;
-
   const pathname = usePathname();
 
   const linkStyle = (path) =>
@@ -21,11 +20,15 @@ const Navbar = () => {
     }`;
 
   return (
-    <div className=" bg-base-100 shadow-md sticky top-0 z-50 backdrop-blur-md">
-      <div className="navbar container mx-auto">
-        <div className="navbar-start">
+    <div className="bg-[#0F172A] shadow-md sticky top-0 z-50 backdrop-blur-md">
+      <div className="navbar container mx-auto px-2">
+        <div className="navbar-start flex items-center gap-1">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden p-1"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -42,7 +45,7 @@ const Navbar = () => {
               </svg>
             </div>
 
-            <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-3 shadow-lg">
+            <ul className="menu menu-sm dropdown-content bg-[#0F172A] rounded-box z-50 mt-3 w-52 p-3 shadow-lg">
               <li>
                 <Link className={linkStyle("/")} href="/">
                   Home
@@ -61,12 +64,15 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="btn btn-ghost p-7 text-xl flex items-center gap-3">
-            <div className="w-8 h-8 rounded-xl bg-linear-to-tr from-blue-500 via-cyan-400 to-indigo-500 flex items-center justify-center shadow-lg">
+          <div className="btn btn-ghost px-2 lg:px-4 flex items-center gap-2">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-blue-500 via-cyan-400 to-indigo-500 flex items-center justify-center shadow-lg">
               <span className="text-white font-bold text-lg">B</span>
             </div>
 
-            <Link href="/" className="text-xl font-bold tracking-wide bg-linear-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+            <Link
+              href="/"
+              className="hidden sm:block text-xl font-bold tracking-wide bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent"
+            >
               Book Store
             </Link>
           </div>
@@ -97,10 +103,11 @@ const Navbar = () => {
             <span className="loading loading-spinner loading-md"></span>
           </div>
         ) : user ? (
-          <div className="navbar-end flex items-center gap-3">
-            <h2>{user.name}</h2>
+          <div className="navbar-end flex items-center gap-2 sm:gap-3">
+            <h2 className="hidden sm:block">{user.name}</h2>
+
             <div className="avatar">
-              <div className="w-9 rounded-full bg-linear-to-tr from-blue-500 to-cyan-400 flex items-center justify-center text-white font-bold overflow-hidden">
+              <Link href={"/my-profile"} className="w-9 h-9 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 flex items-center justify-center text-white font-bold overflow-hidden cursor-pointer">
                 {user?.image ? (
                   <Image
                     src={user.image}
@@ -110,25 +117,24 @@ const Navbar = () => {
                     className="object-cover w-full h-full"
                   />
                 ) : (
-                  <span className="text-lg">
-                    {user?.name?.charAt(0).toUpperCase()}
-                  </span>
+                  <span>{user?.name?.charAt(0).toUpperCase()}</span>
                 )}
-              </div>
+              </Link>
             </div>
+
             <button
-              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-red-500 to-pink-500 text-white text-sm font-medium shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
+              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1 sm:py-2 rounded-lg bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs sm:text-sm font-medium shadow-md hover:scale-105 transition-all"
               onClick={async () => await authClient.signOut()}
             >
-              <FiLogOut className="text-lg" />
-              Logout
+              <FiLogOut />
+              <span className="hidden sm:inline">Logout</span>
             </button>
           </div>
         ) : (
           <div className="navbar-end">
             <Link
               href="/login"
-              className="px-5 py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-cyan-400 hover:to-blue-500 transition-all duration-300 shadow-md hover:shadow-lg"
+              className="px-3 sm:px-5 py-1 sm:py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 to-cyan-400 text-sm sm:text-base"
             >
               Login
             </Link>

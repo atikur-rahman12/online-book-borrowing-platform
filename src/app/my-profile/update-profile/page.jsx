@@ -39,8 +39,8 @@ const UpdateProfilePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-base-200 via-base-100 to-base-200 flex items-center justify-center p-6">
-      <div className="card w-full max-w-md bg-base-100 shadow-xl border border-base-300 rounded-2xl">
+    <div className="min-h-screen bg-linear-to-r from-[#0F172A] to-[#1E293B] flex items-center justify-center p-6">
+      <div className="card w-full max-w-md bg-[#0F172A] shadow-xl border border-base-300 rounded-2xl">
         <div className="p-6 text-center border-b border-base-300">
           <h2 className="text-3xl font-bold tracking-tight">Update Profile</h2>
           <p className="text-sm opacity-70 mt-1">
