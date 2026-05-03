@@ -66,9 +66,9 @@ const Navbar = () => {
               <span className="text-white font-bold text-lg">B</span>
             </div>
 
-            <span className="text-xl font-bold tracking-wide bg-linear-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+            <Link href="/" className="text-xl font-bold tracking-wide bg-linear-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
               Book Store
-            </span>
+            </Link>
           </div>
         </div>
 
