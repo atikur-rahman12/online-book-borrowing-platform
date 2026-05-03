@@ -5,10 +5,10 @@ import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
-import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import { IoEyeOffSharp, IoEyeSharp } from "react-icons/io5";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const RegisterClient = () => {
   const router = useRouter();
@@ -32,12 +32,24 @@ const RegisterClient = () => {
     });
 
     if (error) {
-      console.log(error);
-      return toast.error(error.message || "Registration Failed");
+      toast.error(error.message || "Please Enter a Valid Email Address.", {
+        style: {
+          background: "rgba(239, 68, 68, 0.15)",
+          border: "1px solid rgba(239, 68, 68, 0.4)",
+          backdropFilter: "blur(12px)",
+        },
+      });
+      return;
     }
 
     if (res) {
-      toast.success("Registered Successfully");
+      toast.success("Registration Successful ", {
+        style: {
+          background: "rgba(34, 197, 94, 0.15)",
+          border: "1px solid rgba(34, 197, 94, 0.4)",
+          backdropFilter: "blur(12px)",
+        },
+      });
 
       await authClient.signOut();
 

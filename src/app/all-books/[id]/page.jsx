@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BorrowButton from "../BorrowButton";
 
 const BooksDetailsPage = async ({ params }) => {
   const { id } = await params;
@@ -58,9 +59,7 @@ const BooksDetailsPage = async ({ params }) => {
             </div>
 
             <div className="flex gap-4 mt-6">
-              <button className="px-6 py-3 rounded-xl bg-linear-to-r from-blue-500 to-indigo-600 hover:scale-105 hover:shadow-xl transition-all duration-300 font-medium">
-                Borrow This Book
-              </button>
+              <BorrowButton />
             </div>
           </div>
         </div>

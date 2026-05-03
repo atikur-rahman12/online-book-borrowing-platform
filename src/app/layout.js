@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
-import { Slide, ToastContainer } from "react-toastify";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,20 +20,17 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} min-h-full flex flex-col`}>
         <Navbar />
         {children}
-        <ToastContainer
+        <Toaster
           position="top-center"
-          autoClose={3000}
-          hideProgressBar={false}
-          newestOnTop
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          transition={Slide}
-          className="text-sm"
-          toastClassName="backdrop-blur-xl bg-white/10 border border-white/20 text-white shadow-2xl rounded-xl px-4 py-3"
-          bodyClassName="text-sm font-medium"
+          toastOptions={{
+            style: {
+              background: "rgba(15, 23, 42, 0.9)",
+              color: "#fff",
+              border: "1px solid rgba(255,255,255,0.1)",
+              backdropFilter: "blur(10px)",
+              borderRadius: "12px",
+            },
+          }}
         />
         <Footer />
       </body>

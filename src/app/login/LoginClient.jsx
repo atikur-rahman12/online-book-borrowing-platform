@@ -1,6 +1,6 @@
 "use client";
 
-import { toast } from "react-toastify";
+
 import { useForm } from "react-hook-form";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
@@ -8,6 +8,7 @@ import Link from "next/link";
 import google from "@/assets/google1.jpg";
 import { useState } from "react";
 import { IoEyeOffSharp, IoEyeSharp } from "react-icons/io5";
+import toast from "react-hot-toast";
 
 const LoginClient = () => {
   const {
@@ -29,24 +30,20 @@ const LoginClient = () => {
     if (error) {
       toast.error(error.message || "Invalid Email or Password", {
         style: {
-          background: "rgba(255, 0, 0, 0.12)",
+          background: "rgba(239, 68, 68, 0.15)",
+          border: "1px solid rgba(239, 68, 68, 0.4)",
           backdropFilter: "blur(12px)",
-          border: "1px solid rgba(255, 0, 0, 0.3)",
-          color: "#fff",
-          borderRadius: "16px",
         },
       });
       return;
     }
-// 
+
     if (res) {
-      toast.success("Login Successful", {
+      toast.success("Login Successful ", {
         style: {
-          background: "rgba(34, 197, 94, 0.12)",
+          background: "rgba(34, 197, 94, 0.15)",
+          border: "1px solid rgba(34, 197, 94, 0.4)",
           backdropFilter: "blur(12px)",
-          border: "1px solid rgba(34, 197, 94, 0.3)",
-          color: "#fff",
-          borderRadius: "16px",
         },
       });
     }
