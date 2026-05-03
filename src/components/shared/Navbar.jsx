@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import { FiLogOut } from "react-icons/fi";
+import User from "@/assets/user.png";
 
 const Navbar = () => {
   const { data: session, isPending } = authClient.useSession();
@@ -16,7 +17,7 @@ const Navbar = () => {
     `relative px-2 py-1 transition-all duration-300 hover:text-blue-400 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-blue-400 after:to-cyan-400 after:transition-all after:duration-300 hover:after:w-full ${
       pathname === path
         ? "text-blue-400 after:w-full"
-        : "text-gray-600 dark:text-gray-300"
+        : "text-gray-600 dark:text-white/80"
     }`;
 
   return (
@@ -27,7 +28,7 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost lg:hidden p-1"
+              className="btn btn-ghost lg:hidden p-1 text-white"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +108,10 @@ const Navbar = () => {
             <h2 className="hidden sm:block">{user.name}</h2>
 
             <div className="avatar">
-              <Link href={"/my-profile"} className="w-9 h-9 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 flex items-center justify-center text-white font-bold overflow-hidden cursor-pointer">
+              <Link
+                href={"/my-profile"}
+                className="w-9 h-9 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 flex items-center justify-center text-white font-bold overflow-hidden cursor-pointer"
+              >
                 {user?.image ? (
                   <Image
                     src={user.image}
@@ -117,7 +121,13 @@ const Navbar = () => {
                     className="object-cover w-full h-full"
                   />
                 ) : (
-                  <span>{user?.name?.charAt(0).toUpperCase()}</span>
+                  <Image
+                    src={User}
+                    alt="user"
+                    width={48}
+                    height={48}
+                    className="object-cover w-full h-full"
+                  />
                 )}
               </Link>
             </div>
@@ -127,7 +137,7 @@ const Navbar = () => {
               onClick={async () => await authClient.signOut()}
             >
               <FiLogOut />
-              <span className="hidden sm:inline">Logout</span>
+              <span>Logout</span>
             </button>
           </div>
         ) : (

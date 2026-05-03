@@ -41,7 +41,7 @@ const AllBooks = () => {
           <Sidebar setCategory={setCategory} activeCategory={category} />
 
           <div className="flex-1">
-            <div className="mb-10">
+            <div className="mb-10 text-white">
               <input
                 type="text"
                 placeholder="Search books by title..."

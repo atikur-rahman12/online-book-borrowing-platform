@@ -39,10 +39,10 @@ const UpdateProfilePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-r from-[#0F172A] to-[#1E293B] flex items-center justify-center p-6">
+    <div className="min-h-screen bg-[#020617] flex items-center justify-center p-6">
       <div className="card w-full max-w-md bg-[#0F172A] shadow-xl border border-base-300 rounded-2xl">
         <div className="p-6 text-center border-b border-base-300">
-          <h2 className="text-3xl font-bold tracking-tight">Update Profile</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-white">Update Profile</h2>
           <p className="text-sm opacity-70 mt-1">
             Keep your profile information updated
           </p>

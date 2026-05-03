@@ -11,7 +11,7 @@ const Books = async () => {
   return (
     <div className="bg-[#0F172A]">
       <div className="container mx-auto py-16">
-        <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center">
+        <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center text-white">
           Discover Your Next Read -{" "}
         </h1>
 

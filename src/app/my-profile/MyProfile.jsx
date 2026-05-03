@@ -37,7 +37,7 @@ const MyProfile = () => {
   }
 
   return (
-    <div className="min-h-screen bg-linear-to-r from-[#0F172A] to-[#1E293B] flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#020617] flex items-center justify-center p-4">
       <div className="card w-full max-w-md bg-[#0F172A] shadow-2xl rounded-2xl">
         <div className="bg-linear-to-r from-primary to-secondary p-6 rounded-t-2xl text-white text-center">
           <h2 className="text-3xl font-bold">My Profile</h2>

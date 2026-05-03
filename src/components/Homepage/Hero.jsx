@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="bg-blue-500/20 blur-3xl rounded-full" />
 
       <div className="text-center max-w-2xl">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+        <h1 className="text-3xl md:text-6xl font-bold leading-tight">
           Find Your <span className="text-blue-400">Next Read</span>
         </h1>
 
