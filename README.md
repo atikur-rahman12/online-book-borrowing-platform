@@ -3,6 +3,10 @@
 ## 📖 Purpose
 This project is a modern web-based platform where users can browse, borrow, and manage books online. It provides a smooth and user-friendly experience for book lovers.
 
+## 📸 Project Preview
+<img width="1917" height="938" alt="project" src="https://github.com/user-attachments/assets/3c3fc9d6-60c3-489b-8817-0c54a1c46673" />
+
+
 ## 🌐 Live URL
 👉 https://online-book-borrowing-platform-theta.vercel.app/
 
