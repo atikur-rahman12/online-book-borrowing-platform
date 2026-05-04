@@ -15,7 +15,7 @@ This project is a modern web-based platform where users can browse, borrow, and 
 - 📚 Browse Books by Category (Story, Tech, Science)
 - 🔍 Search Functionality
 - 🧾 Book Details Page
-- ❤️ Borrow / Return System
+- ❤️ Borrow System
 - 👤 User Profile Page
 - 🎨 Modern UI with Tailwind CSS & DaisyUI
 - ⚡ Fast Performance with Next.js
