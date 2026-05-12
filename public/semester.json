@@ -3,7 +3,7 @@
     "id": 1,
     "title": "1st Semester",
     "description": "Foundation courses and basic engineering concepts for beginners.",
-    "image": "",
+    "image": "https://i.ibb.co.com/nsGqryyn/1st-semester.jpg",
     "total_departments": 5,
     "status_badge": "Not Available"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "2nd Semester",
     "description": "Intermediate technical subjects with practical learning resources.",
-    "image": "",
+    "image": "https://i.ibb.co.com/s9DLvsWj/2nd-semester-png.jpg",
     "total_departments": 5,
     "status_badge": "Available"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "3rd Semester",
     "description": "Advanced departmental books and lab-based study materials.",
-    "image": "",
+    "image": "https://i.ibb.co.com/B2Y6Gf0p/3rd-semester.jpg",
     "total_departments": 5,
     "status_badge": "Available"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "title": "4th Semester",
     "description": "Core engineering and professional skill development resources.",
-    "image": "",
+    "image": "https://i.ibb.co.com/27nNvWbM/4th-semester.jpg",
     "total_departments": 5,
     "status_badge": "Not Available"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "title": "5th Semester",
     "description": "Project-focused learning materials and industrial technologies.",
-    "image": "",
+    "image": "https://i.ibb.co.com/nqBKSbXB/5th-semester.jpg",
     "total_departments": 5,
     "status_badge": "Available"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "title": "6th Semester",
     "description": "Specialized technical books with real-world applications.",
-    "image": "",
+    "image": "https://i.ibb.co.com/rRWDLby6/6th-semester.jpg",
     "total_departments": 5,
     "status_badge": "Not Available"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "title": "7th Semester",
     "description": "Final semester resources including internship and project guides.",
-    "image": "",
+    "image": "https://i.ibb.co.com/jPK1Q0Wq/7th-semester.jpg",
     "total_departments": 5,
     "status_badge": "Available"
   }
