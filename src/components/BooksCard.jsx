@@ -8,26 +8,33 @@ import Image from "next/image";
 const BooksCard = ({ book }) => {
   return (
     <div className="animate__animated animate__fadeInUp group w-full rounded-2xl border border-gray-100 bg-white/70 backdrop-blur-xl shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col overflow-hidden">
-      {/* Top Image / Visual Area */}
-      <figure className="relative w-full h-52 flex items-center justify-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 overflow-hidden">
-        {/* Floating Glow Effect */}
-        <div className="absolute w-40 h-40 bg-blue-400/20 rounded-full blur-3xl top-5 right-5 group-hover:scale-110 transition"></div>
+      <figure className="relative w-full h-56 flex items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-purple-50 overflow-hidden">
+        <div className="absolute w-52 h-52 bg-indigo-400/20 rounded-full blur-3xl top-6 right-6 group-hover:scale-110 transition"></div>
 
-        {/* <Image
-          src={book.image}
-          alt={book.title}
-          width={180}
-          height={260}
-          className="object-cover h-full w-auto rounded-lg shadow-xl transition-transform duration-500 group-hover:scale-105"
-        /> */}
+        <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-white/20"></div>
 
-        {/* Badge */}
-        <span className="absolute top-3 right-3 px-3 py-1 text-xs font-semibold rounded-full bg-blue-600 text-white shadow-md">
+        {/* Book image wrapper (premium floating effect) */}
+        <div
+          className="relative z-10 p-3 bg-white/60 backdrop-blur-md rounded-xl shadow-xl border border-white/40 
+                  transform transition-all duration-500 group-hover:scale-105 group-hover:-rotate-1"
+        >
+          <Image
+            src={book.image}
+            alt={book.title}
+            width={160}
+            height={240}
+            className="object-cover rounded-lg"
+          />
+        </div>
+
+        <span
+          className="absolute top-3 right-3 px-3 py-1 text-xs font-semibold rounded-full 
+                   bg-white/70 backdrop-blur-md text-blue-700 shadow-md border border-white/40"
+        >
           {book.status_badge}
         </span>
       </figure>
 
-      {/* Content */}
       <div className="p-6 flex flex-col grow">
         <h2 className="text-xl font-bold text-gray-900 text-center tracking-tight">
           {book.title}
@@ -43,7 +50,6 @@ const BooksCard = ({ book }) => {
           </span>
         </div>
 
-        {/* Button */}
         <div className="mt-auto pt-6">
           <Link
             href={`/all-books/${book.id}`}
