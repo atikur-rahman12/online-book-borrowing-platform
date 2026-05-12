@@ -14,23 +14,17 @@ const BooksCard = ({ book }) => {
         <div className="absolute inset-0 bg-linear-to-t from-white/40 via-transparent to-white/20"></div>
 
         {/* Book image wrapper (premium floating effect) */}
-        <div
-          className="relative z-10 p-3 bg-white/60 backdrop-blur-md rounded-xl shadow-xl border border-white/40 
-                  transform transition-all duration-500 group-hover:scale-105 group-hover:-rotate-1"
-        >
+        <div className="relative z-10 p-3 bg-white/60 backdrop-blur-md rounded-xl shadow-xl border border-white/40 transform transition-all duration-500 group-hover:scale-105 group-hover:-rotate-1">
           <Image
             src={book.image}
             alt={book.title}
             width={160}
             height={240}
-            className="object-cover rounded-lg"
+            className="object-cover h-30 w-auto"
           />
         </div>
 
-        <span
-          className="absolute top-3 right-3 px-3 py-1 text-xs font-semibold rounded-full 
-                   bg-white/70 backdrop-blur-md text-blue-700 shadow-md border border-white/40"
-        >
+        <span className="absolute top-2 right-2 px-3 py-1 text-xs font-semibold rounded-full bg-white/70 backdrop-blur-md text-blue-700 shadow-md border border-white/40">
           {book.status_badge}
         </span>
       </figure>
@@ -55,7 +49,7 @@ const BooksCard = ({ book }) => {
             href={`/all-books/${book.id}`}
             className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white text-sm py-3 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.02] active:scale-95"
           >
-            View Details
+            Explore Now
             <LuSquareArrowOutUpRight className="text-lg" />
           </Link>
         </div>

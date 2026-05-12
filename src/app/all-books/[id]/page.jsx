@@ -1,11 +1,11 @@
 import Image from "next/image";
 import BorrowButton from "../BorrowButton";
 
-const BooksDetailsPage = async ({ params }) => {
+const Department = async ({ params }) => {
   const { id } = await params;
 
   const res = await fetch(
-    "https://online-book-borrowing-platform-theta.vercel.app/data.json",
+    "https://online-book-borrowing-platform-tawny.vercel.app/semester.json",
     { cache: "no-store" },
   );
   const books = await res.json();
@@ -72,4 +72,4 @@ const BooksDetailsPage = async ({ params }) => {
   );
 };
 
-export default BooksDetailsPage;
+export default Department;

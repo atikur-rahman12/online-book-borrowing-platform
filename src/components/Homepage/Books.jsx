@@ -2,7 +2,7 @@ import BooksCard from "../BooksCard";
 
 const Books = async () => {
   const res = await fetch(
-    "https://online-book-borrowing-platform-tawny.vercel.app/semester.json",
+    "https://online-book-borrowing-platform-tawny.vercel.app/semester.json"
   );
   const books = await res.json();
 

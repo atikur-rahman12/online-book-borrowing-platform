@@ -4,16 +4,15 @@ import { useEffect, useState } from "react";
 import BooksCard from "@/components/BooksCard";
 import { FaBookOpen } from "react-icons/fa";
 
-
 const AllBooks = () => {
   const [books, setBooks] = useState([]);
   const [search, setSearch] = useState("");
-  const [category, setCategory] = useState("All"); 
+  const [category, setCategory] = useState("All");
 
   useEffect(() => {
     const fetchBooks = async () => {
       const res = await fetch(
-        "",
+        "https://online-book-borrowing-platform-tawny.vercel.app/semester.json",
       );
       const data = await res.json();
       setBooks(data);
@@ -38,7 +37,6 @@ const AllBooks = () => {
         </h1>
 
         <div className="flex flex-col md:flex-row gap-6">
-
           <div className="flex-1">
             <div className="mb-10 text-white">
               <input
