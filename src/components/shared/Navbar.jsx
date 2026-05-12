@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import { FiLogOut } from "react-icons/fi";
 import User from "@/assets/user.png";
+import Logo from "@/assets/bookstore-logo.png";
 
 const Navbar = () => {
   const { data: session, isPending } = authClient.useSession();
@@ -66,15 +67,22 @@ const Navbar = () => {
           </div>
 
           <div className="btn btn-ghost px-2 lg:px-4 flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-blue-500 via-cyan-400 to-indigo-500 flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-lg">B</span>
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr flex items-center justify-center shadow-lg">
+              <Image
+                src={Logo}
+                alt="Logo"
+                width={300}
+                height={300}
+                className="rounded-full"
+              />
             </div>
 
             <Link
               href="/"
-              className="hidden sm:block text-xl font-bold tracking-wide bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent"
+              className="hidden sm:block text-2xl font-bold tracking-wide"
             >
-              Book Store
+              <span className="text-[#063D79] ml-2">PolyBook</span>{" "}
+              <span className="text-[#F27A16]">Hub</span>
             </Link>
           </div>
         </div>
