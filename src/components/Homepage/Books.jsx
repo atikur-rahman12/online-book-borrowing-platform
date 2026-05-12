@@ -1,6 +1,13 @@
 import BooksCard from "../BooksCard";
 
-const Books = () => {
+const Books = async () => {
+  const res = await fetch(
+    "https://online-book-borrowing-platform-tawny.vercel.app/semester.json",
+  );
+  const books = await res.json();
+
+  const topBooks = books.slice(0, 4);
+
   return (
     <div className="bg-[#0F172A]">
       <div className="container mx-auto py-16">
@@ -9,7 +16,9 @@ const Books = () => {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
-          <BooksCard />
+          {topBooks.map((book) => (
+            <BooksCard key={book.id} book={book} />
+          ))}
         </div>
       </div>
     </div>
