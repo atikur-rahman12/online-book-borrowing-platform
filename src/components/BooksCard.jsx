@@ -8,10 +8,10 @@ import Image from "next/image";
 const BooksCard = ({ book }) => {
   return (
     <div className="animate__animated animate__fadeInUp group w-full rounded-2xl border border-gray-100 bg-white/70 backdrop-blur-xl shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col overflow-hidden">
-      <figure className="relative w-full h-56 flex items-center justify-center bg-gradient-to-br from-indigo-50 via-white to-purple-50 overflow-hidden">
+      <figure className="relative w-full h-56 flex items-center justify-center bg-linear-to-br from-indigo-50 via-white to-purple-50 overflow-hidden">
         <div className="absolute w-52 h-52 bg-indigo-400/20 rounded-full blur-3xl top-6 right-6 group-hover:scale-110 transition"></div>
 
-        <div className="absolute inset-0 bg-gradient-to-t from-white/40 via-transparent to-white/20"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-white/40 via-transparent to-white/20"></div>
 
         {/* Book image wrapper (premium floating effect) */}
         <div

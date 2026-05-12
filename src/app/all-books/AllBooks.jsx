@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import BooksCard from "@/components/BooksCard";
 import { FaBookOpen } from "react-icons/fa";
-import Sidebar from "./Sidebar";
+
 
 const AllBooks = () => {
   const [books, setBooks] = useState([]);
@@ -13,7 +13,7 @@ const AllBooks = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       const res = await fetch(
-        "https://online-book-borrowing-platform-tawny.vercel.app/semester.json",
+        "",
       );
       const data = await res.json();
       setBooks(data);
