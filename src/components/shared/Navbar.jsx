@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
 
           <div className="btn btn-ghost px-2 lg:px-4 flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr flex items-center justify-center shadow-lg">
+            <div className="w-8 h-8 rounded-xl flex items-center justify-center shadow-lg">
               <Image
                 src={Logo}
                 alt="Logo"
@@ -81,8 +81,8 @@ const Navbar = () => {
               href="/"
               className="hidden sm:block text-2xl font-bold tracking-wide"
             >
-              <span className="text-[#063D79] ml-2">PolyBook</span>{" "}
-              <span className="text-[#F27A16]">Hub</span>
+              <span className="text-[#063D79] ml-2">Book</span>{" "}
+              <span className="text-[#F27A16]">Store</span>
             </Link>
           </div>
         </div>
