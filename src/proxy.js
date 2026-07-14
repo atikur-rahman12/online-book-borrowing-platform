@@ -4,7 +4,7 @@ dns.setServers(["1.1.1.1", "8.8.4.4"]);
 import { NextResponse } from "next/server";
 import { auth } from "./lib/auth";
 
-export async function proxy(request) {
+export async function middleware(request) {
   const session = await auth.api.getSession({
     headers: request.headers,
   });
@@ -18,7 +18,14 @@ export async function proxy(request) {
   if (session) {
     return NextResponse.next();
   }
-  return NextResponse.redirect(new URL("/login", request.url));
+
+  const loginUrl = new URL(request.url);
+  loginUrl.searchParams.set("unauthorized", "true");
+  return NextResponse.next({
+    request: {
+      headers: new Headers(request.headers),
+    },
+  });
 }
 
 export const config = {
