@@ -1,13 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 import BorrowButton from "../BorrowButton";
-import { FaStar, FaGlobe, FaCalendarAlt, FaLock } from "react-icons/fa";
+import { FaStar, FaGlobe, FaCalendarAlt, FaLayerGroup } from "react-icons/fa";
 
-const Department = async ({ params, searchParams }) => {
+const Department = async ({ params }) => {
   const { id } = await params;
-  const { unauthorized } = await searchParams;
-  const isUnauthorized = unauthorized === "true";
-
   let books = [];
 
   try {
@@ -34,7 +30,7 @@ const Department = async ({ params, searchParams }) => {
   }
 
   return (
-    <div className="relative min-h-screen bg-linear-to-br from-[#020617] via-[#0F172A] to-[#020617] py-16 px-4 flex items-center justify-center overflow-hidden">
+    <div className="min-h-screen bg-linear-to-br from-[#020617] via-[#0F172A] to-[#020617] py-16 px-4 flex items-center justify-center">
       <div className="max-w-5xl w-full rounded-3xl overflow-hidden border border-slate-700/40 bg-[#1E293B]/20 backdrop-blur-2xl shadow-[0_0_60px_rgba(0,0,0,0.7)] hover:border-slate-700/80 transition-all duration-500">
         <div className="grid md:grid-cols-12 gap-8 p-6 md:p-12">
           <div className="md:col-span-5 flex justify-center items-center">
@@ -129,40 +125,6 @@ const Department = async ({ params, searchParams }) => {
           </div>
         </div>
       </div>
-
-      {isUnauthorized && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
-          <div className="relative w-full max-w-md p-8 rounded-3xl bg-slate-900/90 border border-slate-700/60 shadow-[0_0_50px_rgba(59,130,246,0.2)] text-center transform scale-100 transition-all duration-300">
-            <div className="flex justify-center mb-5">
-              <div className="p-4 bg-rose-500/10 border border-rose-500/20 text-rose-400 rounded-full shadow-xl">
-                <FaLock className="text-3xl animate-bounce" />
-              </div>
-            </div>
-
-            <h3 className="text-2xl font-black text-white mb-2 tracking-wide">
-              Access Denied
-            </h3>
-
-            <p className="text-sm text-slate-400 mb-8 leading-relaxed">
-              This is a private page. Please sign in to your account to unlock
-              full access to this book's details.
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="/" className="w-full sm:w-1/2">
-                <button className="w-full px-5 py-3 rounded-xl border border-slate-700 hover:border-slate-600 bg-slate-800/40 text-slate-300 font-semibold text-sm transition-all duration-300">
-                  Go Back
-                </button>
-              </Link>
-              <Link href="/login" className="w-full sm:w-1/2">
-                <button className="w-full px-5 py-3 rounded-xl bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-sm tracking-wide shadow-lg shadow-blue-500/20 transition-all duration-300">
-                  Login Now
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
