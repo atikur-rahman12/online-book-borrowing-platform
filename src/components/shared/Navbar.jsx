@@ -118,7 +118,7 @@ const Navbar = () => {
             <div className="avatar">
               <Link
                 href={"/my-profile"}
-                className="w-9 h-9 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 flex items-center justify-center text-white font-bold overflow-hidden cursor-pointer"
+                className="w-9 h-9 rounded-full bg-linear-to-tr from-blue-500 to-cyan-400 flex items-center justify-center text-white font-bold overflow-hidden cursor-pointer"
               >
                 {user?.image ? (
                   <Image
@@ -141,7 +141,7 @@ const Navbar = () => {
             </div>
 
             <button
-              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1 sm:py-2 rounded-lg bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs sm:text-sm font-medium shadow-md hover:scale-105 transition-all"
+              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1 sm:py-2 rounded-lg bg-linear-to-r from-red-500 to-pink-500 text-white text-xs sm:text-sm font-medium shadow-md hover:scale-105 transition-all"
               onClick={async () => await authClient.signOut()}
             >
               <FiLogOut />
@@ -152,7 +152,7 @@ const Navbar = () => {
           <div className="navbar-end">
             <Link
               href="/login"
-              className="px-3 sm:px-5 py-1 sm:py-2 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 to-cyan-400 text-sm sm:text-base"
+              className="px-3 sm:px-5 py-1 sm:py-2 rounded-lg font-medium text-white bg-linear-to-r from-blue-500 to-cyan-400 text-sm sm:text-base"
             >
               Login
             </Link>
