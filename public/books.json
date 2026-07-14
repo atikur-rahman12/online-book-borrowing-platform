@@ -8,7 +8,7 @@
     "price": 15.99,
     "stock": 25,
     "rating": 4.8,
-    "image": "https://picsum.photos/seed/book1/300/450",
+    "image": "https://i.ibb.co.com/Pv7hCDxf/alchemist.webp",
     "description": "A philosophical novel about a young shepherd named Santiago who dreams of discovering his personal legend.",
     "language": "English"
   },
@@ -21,7 +21,7 @@
     "price": 18.99,
     "stock": 40,
     "rating": 4.9,
-    "image": "https://picsum.photos/seed/book2/300/450",
+    "image": "https://i.ibb.co.com/ZR3cH1CG/atomic-habits.jpg",
     "description": "A practical guide to building good habits, breaking bad ones, and achieving lasting success.",
     "language": "English"
   },
@@ -34,7 +34,7 @@
     "price": 17.5,
     "stock": 30,
     "rating": 4.7,
-    "image": "https://picsum.photos/seed/book3/300/450",
+    "image": "https://i.ibb.co.com/wr4WjXYY/rich-dad.jpg",
     "description": "A personal finance classic that challenges conventional beliefs about money and investing.",
     "language": "English"
   },
@@ -47,7 +47,7 @@
     "price": 16.75,
     "stock": 18,
     "rating": 4.6,
-    "image": "https://picsum.photos/seed/book4/300/450",
+    "image": "https://i.ibb.co.com/TMB40Z1z/Ikigai.webp",
     "description": "Discover the Japanese philosophy of finding purpose, happiness, and longevity.",
     "language": "English"
   },
@@ -60,7 +60,7 @@
     "price": 14.99,
     "stock": 22,
     "rating": 4.8,
-    "image": "https://picsum.photos/seed/book5/300/450",
+    "image": "https://i.ibb.co.com/7JhxYtQ3/george.webp",
     "description": "A dystopian novel exploring surveillance, authoritarianism, and the loss of freedom.",
     "language": "English"
   },
@@ -73,7 +73,7 @@
     "price": 13.99,
     "stock": 15,
     "rating": 4.9,
-    "image": "https://picsum.photos/seed/book6/300/450",
+    "image": "https://i.ibb.co.com/k2HXJDVG/to-kill.jpg",
     "description": "A timeless story of justice, morality, and compassion in the American South.",
     "language": "English"
   },
@@ -86,7 +86,7 @@
     "price": 19.99,
     "stock": 35,
     "rating": 4.8,
-    "image": "https://picsum.photos/seed/book7/300/450",
+    "image": "https://i.ibb.co.com/yckbPGkB/money.jpg",
     "description": "Explains how human behavior influences financial decisions more than technical knowledge.",
     "language": "English"
   },
@@ -99,7 +99,7 @@
     "price": 18.25,
     "stock": 20,
     "rating": 4.7,
-    "image": "https://picsum.photos/seed/book8/300/450",
+    "image": "https://i.ibb.co.com/ycFkjDqW/deep-work.jpg",
     "description": "Learn how focused work can help you achieve extraordinary productivity in a distracted world.",
     "language": "English"
   },
@@ -112,7 +112,7 @@
     "price": 21.99,
     "stock": 28,
     "rating": 4.9,
-    "image": "https://picsum.photos/seed/book9/300/450",
+    "image": "https://i.ibb.co.com/pBdsRv8b/sapiens.webp",
     "description": "A fascinating exploration of the history and evolution of humankind.",
     "language": "English"
   },
@@ -125,7 +125,7 @@
     "price": 12.99,
     "stock": 45,
     "rating": 4.6,
-    "image": "https://picsum.photos/seed/book10/300/450",
+    "image": "https://i.ibb.co.com/WWwtrt0j/grow.jpg",
     "description": "A motivational classic that outlines principles for achieving success and financial independence.",
     "language": "English"
   }
