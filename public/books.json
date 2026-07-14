@@ -128,5 +128,31 @@
     "image": "https://i.ibb.co.com/WWwtrt0j/grow.jpg",
     "description": "A motivational classic that outlines principles for achieving success and financial independence.",
     "language": "English"
+  },
+  {
+    "id": 11,
+    "title": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "category": "Spirituality",
+    "publishedYear": 1997,
+    "price": 16.49,
+    "stock": 27,
+    "rating": 4.7,
+    "image": "https://i.ibb.co.com/fYnZtjzV/the-power.webp",
+    "description": "A transformative guide to living fully in the present moment and finding inner peace.",
+    "language": "English"
+  },
+  {
+    "id": 12,
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "category": "Business",
+    "publishedYear": 2011,
+    "price": 20.99,
+    "stock": 19,
+    "rating": 4.8,
+    "image": "https://i.ibb.co.com/sv8thJZG/the-lean.webp",
+    "description": "A practical framework for building successful startups through continuous innovation and customer feedback.",
+    "language": "English"
   }
 ]
