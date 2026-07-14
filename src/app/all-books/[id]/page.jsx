@@ -5,7 +5,7 @@ const Department = async ({ params }) => {
   const { id } = await params;
 
   const res = await fetch(
-    "https://online-book-borrowing-platform-tawny.vercel.app/semester.json",
+    "https://online-book-borrowing-platform-tawny.vercel.app/books.json",
     { cache: "no-store" },
   );
   const books = await res.json();

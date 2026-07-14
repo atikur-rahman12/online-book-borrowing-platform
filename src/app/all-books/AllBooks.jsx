@@ -11,31 +11,19 @@ const AllBooks = () => {
 
   useEffect(() => {
     const fetchBooks = async () => {
-      try {
-        const res = await fetch(
-          "https://online-book-borrowing-platform-tawny.vercel.app/books.json",
-        );
-
-        // রেসপন্স ঠিক আছে কিনা এবং সেটি আসলেই JSON কিনা তা নিশ্চিত করা
-        const contentType = res.headers.get("content-type");
-        if (res.ok && contentType && contentType.includes("application/json")) {
-          const data = await res.json();
-          setBooks(data);
-        } else {
-          console.error("API did not return valid JSON. Status:", res.status);
-        }
-      } catch (error) {
-        console.error("Failed to fetch books:", error);
-      }
+      const res = await fetch(
+        "https://online-book-borrowing-platform-tawny.vercel.app/books.json",
+      );
+      const data = await res.json();
+      setBooks(data);
     };
 
     fetchBooks();
   }, []);
 
   const filteredBooks = books.filter((book) => {
-    // সেফটি চেক: যদি কোনো কারণে অবজেক্টে title না থাকে
-    const bookTitle = book?.title || "";
-    const matchSearch = bookTitle.toLowerCase().includes(search.toLowerCase());
+    const matchSearch = book.title.toLowerCase().includes(search.toLowerCase());
+
     const matchCategory = category === "All" || book.category === category;
 
     return matchSearch && matchCategory;
@@ -54,7 +42,7 @@ const AllBooks = () => {
               <input
                 type="text"
                 placeholder="Search books by title..."
-                className="w-full p-4 rounded-xl noble-input text-slate-900 bg-white border border-gray-300 outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-4 rounded-xl outline-none border border-gray-300 focus:ring-2 focus:ring-blue-500"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
@@ -63,7 +51,7 @@ const AllBooks = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {filteredBooks.length > 0 ? (
                 filteredBooks.map((book) => (
-                  <BooksCard key={book.id || book.title} book={book} />
+                  <BooksCard key={book.id} book={book} />
                 ))
               ) : (
                 <div className="col-span-full flex flex-col items-center justify-center text-center py-20 px-6">
@@ -78,7 +66,7 @@ const AllBooks = () => {
                   <p className="text-gray-400 max-w-md mb-6">
                     No books found in{" "}
                     <span className="text-white font-medium">{category}</span>{" "}
-                    category with {search || "this filter"}
+                    category with {search}
                   </p>
 
                   <button
