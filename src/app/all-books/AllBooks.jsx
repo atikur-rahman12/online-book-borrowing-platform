@@ -48,7 +48,7 @@ const AllBooks = () => {
               />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {filteredBooks.length > 0 ? (
                 filteredBooks.map((book) => (
                   <BooksCard key={book.id} book={book} />
