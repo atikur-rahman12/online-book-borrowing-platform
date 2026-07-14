@@ -22,11 +22,11 @@ const Contact = () => {
             </p>
             <p className="flex gap-2 items-center">
               {" "}
-              <IoCallSharp className="text-2xl" /> +880 1308480206
+              <IoCallSharp className="text-2xl" /> +880 1308-XXXXXX
             </p>
             <p className="flex gap-2 items-center">
               {" "}
-              <LuMailPlus className="text-2xl" /> atikur.an638@gmail.com
+              <LuMailPlus className="text-2xl" /> bookstore@gmail.com
             </p>
           </div>
 
