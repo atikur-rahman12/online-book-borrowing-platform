@@ -30,11 +30,11 @@ const Department = async ({ params }) => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#020617] via-[#0F172A] to-[#020617] py-16 px-4 flex items-center justify-center">
+    <div className="min-h-screen bg-linear-to-br from-[#020617] via-[#0F172A] to-[#020617] py-16 px-4 flex items-center justify-center">
       <div className="max-w-5xl w-full rounded-3xl overflow-hidden border border-slate-700/40 bg-[#1E293B]/20 backdrop-blur-2xl shadow-[0_0_60px_rgba(0,0,0,0.7)] hover:border-slate-700/80 transition-all duration-500">
         <div className="grid md:grid-cols-12 gap-8 p-6 md:p-12">
           <div className="md:col-span-5 flex justify-center items-center">
-            <div className="relative group p-4 bg-[#1E293B]/40 rounded-3xl border border-slate-700/30 shadow-2xl max-w-[300px] w-full aspect-[3/4]">
+            <div className="relative group p-4 bg-[#1E293B]/40 rounded-3xl border border-slate-700/30 shadow-2xl max-w-75 w-full aspect-3/4">
               <div className="relative w-full h-full rounded-2xl overflow-hidden border border-slate-600/30">
                 <Image
                   src={book.image}
@@ -44,7 +44,7 @@ const Department = async ({ params }) => {
                   className="object-cover transform group-hover:scale-105 transition-transform duration-700"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#020617]/40 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#020617]/40 via-transparent to-transparent" />
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ const Department = async ({ params }) => {
               <span className="text-xs font-bold tracking-widest text-blue-400 uppercase bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-md">
                 {book.category}
               </span>
-              <h1 className="text-3xl md:text-5xl font-black leading-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent mt-3">
+              <h1 className="text-3xl md:text-5xl font-black leading-tight bg-linear-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent mt-3">
                 {book.title}
               </h1>
               <p className="text-base md:text-lg text-slate-400 mt-2">
@@ -80,7 +80,7 @@ const Department = async ({ params }) => {
               </div>
             </div>
 
-            <p className="text-slate-400 leading-relaxed text-sm md:text-base border-l-2 border-blue-500/30 pl-4 py-1 bg-blue-500/[0.01]">
+            <p className="text-slate-400 leading-relaxed text-sm md:text-base border-l-2 border-blue-500/30 pl-4 py-1 bg-blue-500/1">
               {book.description}
             </p>
 
@@ -114,7 +114,7 @@ const Department = async ({ params }) => {
                 <p className="text-xs text-slate-500 font-medium">
                   Purchase Value
                 </p>
-                <p className="text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">
+                <p className="text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-linear-to-r from-white to-slate-400">
                   ${book.price?.toFixed(2)}
                 </p>
               </div>
