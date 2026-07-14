@@ -9,13 +9,12 @@ const Hero = () => {
 
       <div className="text-center max-w-2xl">
         <h1 className="text-3xl md:text-6xl font-bold leading-tight">
-          Your Digital Library for{" "}
-          <span className="text-blue-400">Diploma Excellence</span>
+          Where Every Great <span className="text-blue-400">Story Begins</span>
         </h1>
 
         <p className="mt-5 text-gray-300 text-lg">
-          Explore a complete collection of polytechnic books from all semesters
-          and departments. Study anytime, anywhere with ease.
+          Browse thousands of books across every genre, from captivating fiction
+          to insightful non-fiction. Start your next reading adventure today.
         </p>
 
         <div className="mt-8">
