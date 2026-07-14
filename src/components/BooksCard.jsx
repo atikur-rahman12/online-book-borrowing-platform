@@ -1,57 +1,96 @@
 "use client";
 
-import Link from "next/link";
-import { LuSquareArrowOutUpRight } from "react-icons/lu";
-import "animate.css";
-import Image from "next/image";
+import { FaStar, FaGlobe, FaShoppingCart, FaCalendarAlt } from "react-icons/fa";
 
 const BooksCard = ({ book }) => {
+  const {
+    title,
+    author,
+    category,
+    publishedYear,
+    price,
+    stock,
+    rating,
+    image,
+    description,
+    language,
+  } = book;
+
   return (
-    <div className="animate__animated animate__fadeInUp group w-full rounded-2xl border border-gray-100 bg-white/70 backdrop-blur-xl shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col overflow-hidden">
-      <figure className="relative w-full h-56 flex items-center justify-center bg-linear-to-br from-indigo-50 via-white to-purple-50 overflow-hidden">
-        <div className="absolute w-52 h-52 bg-indigo-400/20 rounded-full blur-3xl top-6 right-6 group-hover:scale-110 transition"></div>
+    <div className="group relative bg-[#1E293B]/40 backdrop-blur-md border border-slate-700/50 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.2)] flex flex-col h-full">
+      {/* Image Container with Badges */}
+      <div className="relative aspect-3/4 w-full overflow-hidden bg-slate-800">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+          loading="lazy"
+        />
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-linear-to-t from-[#0F172A] via-transparent to-transparent opacity-60" />
 
-        <div className="absolute inset-0 bg-linear-to-t from-white/40 via-transparent to-white/20"></div>
-
-        {/* Book image wrapper (premium floating effect) */}
-        <div className="relative z-10 p-3 bg-white/60 backdrop-blur-md rounded-xl shadow-xl border border-white/40 transform transition-all duration-500 group-hover:scale-105 group-hover:-rotate-1">
-          <Image
-            src={book.image}
-            alt={book.title}
-            width={160}
-            height={240}
-            className="object-cover h-30 w-auto"
-          />
-        </div>
-
-        <span className="absolute top-2 right-2 px-3 py-1 text-xs font-semibold rounded-full bg-white/70 backdrop-blur-md text-blue-700 shadow-md border border-white/40">
-          {book.status_badge}
-        </span>
-      </figure>
-
-      <div className="p-6 flex flex-col grow">
-        <h2 className="text-xl font-bold text-gray-900 text-center tracking-tight">
-          {book.title}
-        </h2>
-
-        <p className="text-sm text-gray-500 mt-3 text-center line-clamp-3">
-          {book.description}
-        </p>
-
-        <div className="mt-4 flex justify-center">
-          <span className="text-xs px-3 py-1 rounded-full bg-gray-100 text-gray-600">
-            📚 Total Departments: {book.total_departments}
+        {/* Category & Stock Badges */}
+        <div className="absolute top-3 left-3 flex flex-col gap-2">
+          <span className="px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-blue-500 text-white rounded-full shadow-lg backdrop-blur-md bg-opacity-90">
+            {category}
+          </span>
+          <span
+            className={`px-3 py-1 text-xs font-medium rounded-full shadow-lg backdrop-blur-md bg-opacity-90 w-fit ${
+              stock > 0
+                ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30"
+                : "bg-rose-500/20 text-rose-400 border border-rose-500/30"
+            }`}
+          >
+            {stock > 0 ? `${stock} In Stock` : "Out of Stock"}
           </span>
         </div>
 
-        <div className="mt-auto pt-6">
-          <Link
-            href={`/all-books/${book.id}`}
-            className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white text-sm py-3 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.02] active:scale-95"
+        {/* Rating Badge */}
+        <div className="absolute bottom-3 right-3 flex items-center gap-1 px-2.5 py-1 bg-amber-500 text-slate-950 font-bold text-xs rounded-lg shadow-lg">
+          <FaStar className="text-xs" />
+          {rating.toFixed(1)}
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <div className="p-5 flex flex-col grow text-slate-200">
+        <span className="text-xs text-blue-400 font-medium mb-1">{author}</span>
+        <h3 className="text-lg font-bold text-white line-clamp-1 group-hover:text-blue-400 transition-colors duration-300">
+          {title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-sm text-slate-400 mt-2 line-clamp-2 grow">
+          {description}
+        </p>
+
+        {/* Meta Info (Language & Year) */}
+        <div className="flex items-center gap-4 my-4 pt-3 border-t border-slate-700/50 text-xs text-slate-400">
+          <div className="flex items-center gap-1">
+            <FaGlobe className="text-slate-500" />
+            <span>{language}</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <FaCalendarAlt className="text-slate-500" />
+            <span>{publishedYear}</span>
+          </div>
+        </div>
+
+        {/* Price & Action Button */}
+        <div className="flex items-center justify-between mt-auto pt-2">
+          <div>
+            <p className="text-xs text-slate-500 font-medium">Price</p>
+            <p className="text-xl font-black text-transparent bg-clip-text bg-linear-to-r from-white to-slate-400">
+              ${price.toFixed(2)}
+            </p>
+          </div>
+
+          <button
+            disabled={stock === 0}
+            className="p-3 rounded-xl bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-medium transition-all duration-300 shadow-md hover:shadow-blue-500/20 disabled:opacity-50 disabled:cursor-not-allowed group-hover:-translate-y-0.5"
           >
-            Explore Now
-            <LuSquareArrowOutUpRight className="text-lg" />
-          </Link>
+            <FaShoppingCart className="text-sm" />
+          </button>
         </div>
       </div>
     </div>
